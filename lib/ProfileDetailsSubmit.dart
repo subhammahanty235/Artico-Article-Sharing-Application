@@ -146,8 +146,8 @@ class _ProfileDetailsSubmitState extends State<ProfileDetailsSubmit> {
   Future<void> _submitData(String name, String gender, var age, String hobbies,
       String country) async {
     if (name.length >= 5 &&
-        age >= 0 &&
-        age <= 100 &&
+        int.parse(age) >= 0 &&
+        int.parse(age) <= 100 &&
         country.length >= 3 &&
         hobbies.length >= 3) {
       var userDetails = Profiledetails(
