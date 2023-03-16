@@ -149,7 +149,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           // print(id.toHexString());
 
           final prefs = await SharedPreferences.getInstance();
-          prefs.setString("ID_USER", id.toHexString());
+          prefs.setString("ID_USER", id.toHexString());      //setting user ID
           prefs.setBool("USER_LOGGEDIN", true);
 
           Navigator.pushReplacement(
